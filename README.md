@@ -22,20 +22,11 @@
 
 ---
 
+## 🤝 Vamos nos conectar?
+
+[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/riannascimento)
+
 ## ⭐ GitHub Stats
-
-<p align="center">
-  Vamos nos conectar?  
-</p>
-
-<p align="center">
-  <a href="mailto:riannasc1337@gmail.com" title="Email">
-    <img src="https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  <a href="https://www.linkedin.com/in/riannascimento/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-</p>
 
 <div align="center">
   
