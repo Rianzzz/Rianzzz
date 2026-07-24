@@ -15,7 +15,7 @@
 [![My Skills](https://skillicons.dev/icons?i=cs,python)](https://skillicons.dev)
 
 ### 🚀 Frameworks e bibliotecas
-[![My Skills](https://skillicons.dev/icons?i=flask,fastapi)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=flask,fastapi,dotnet)](https://skillicons.dev)
 
 ### 🛠️ Ferramentas
 [![My Skills](https://skillicons.dev/icons?i=git,github,vscode,postman)](https://skillicons.dev)
