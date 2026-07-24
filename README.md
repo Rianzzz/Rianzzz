@@ -12,7 +12,7 @@
 ## 💻 Tecnologias e ferramentas
 
 ### 📌 Linguagens
-[![My Skills](https://skillicons.dev/icons?i=html,css,python)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=c#,python)](https://skillicons.dev)
 
 ### 🚀 Frameworks e bibliotecas
 [![My Skills](https://skillicons.dev/icons?i=flask,fastapi)](https://skillicons.dev)
