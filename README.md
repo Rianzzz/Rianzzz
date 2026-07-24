@@ -4,7 +4,7 @@
 <p align="left">
   Estudante de <strong>Sistemas de Informação</strong> pelo Cotemig (6º período).<br>
   Apaixonado por tecnologia e desenvolvimento, focada em aprimorar minhas habilidades e construir projetos significativos.<br>
-  Linguagens que estudo e uso: <strong>Python</strong>, <strong>HTML</strong>, e <strong>CSS</strong>.
+  Linguagens que estudo e uso: <strong>Python</strong> e <strong>C#</strong>.
 </p>
 
 ---
