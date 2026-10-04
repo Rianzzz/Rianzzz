@@ -159,86 +159,6 @@ def banner(archivo: Face, mono: Face) -> str:
     return "\n".join(out)
 
 
-# ───────────────────────────── Stack ─────────────────────────────
-
-STACK = [
-    ["C#", ".NET", "ASP.NET Core", "EF Core", "TypeScript", "Python", "FastAPI", "Flask"],
-    ["PostgreSQL", "Oracle", "RabbitMQ", "Docker", "Kubernetes", "GitHub Actions", "Blip", "Agentes de IA"],
-]
-
-
-def stack(mono: Face) -> str:
-    W, pad, gap, ph = 1200, 0, 12, 40
-    rows = []
-    y = 4
-    for row in STACK:
-        x = pad + 4
-        items = []
-        for item in row:
-            w = mono.width(item, 15) + 36
-            items.append((x, item, w))
-            x += w + gap
-        rows.append((y, items))
-        y += ph + gap
-    H = y - gap + 8
-    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
-           f'aria-label="Tecnologias: {", ".join(i for r in STACK for i in r)}">']
-    for yy, items in rows:
-        for x, item, w in items:
-            out.append(f'<rect x="{x + 4}" y="{yy + 4}" width="{w}" height="{ph}" fill="{INK}"/>')  # sombra dura
-            out.append(f'<rect x="{x}" y="{yy}" width="{w}" height="{ph}" fill="{CREAM}" stroke="{INK}" stroke-width="2"/>')
-            d, _ = mono.text(item, 15, x + 18, yy + 26)
-            out.append(p(d, INK))
-    out.append("</svg>")
-    return "\n".join(out)
-
-
-# ───────────────────────────── Integration Hub ─────────────────────────────
-
-def hub(mono: Face, archivo_bold: Face) -> str:
-    W, H = 600, 250
-    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
-           f'aria-label="Várias origens de dados passam por adapters, viram um modelo único e vão para o PostgreSQL">']
-    out.append(f'<rect width="{W}" height="{H}" fill="{COBALT}"/>')
-
-    sources = ["origem A", "origem B", "origem C"]
-    ys = [60, 125, 190]
-    for s, y in zip(sources, ys):
-        out.append(f'<rect x="30" y="{y - 18}" width="120" height="36" fill="none" stroke="{CREAM}" stroke-width="2"/>')
-        d, w = mono.text(s, 13)
-        d, _ = mono.text(s, 13, 30 + (120 - w) / 2, y + 5)
-        out.append(p(d, CREAM))
-        out.append(f'<line x1="150" y1="{y}" x2="250" y2="125" stroke="{CREAM}" stroke-opacity="0.5" stroke-width="1.5"/>')
-
-    # adapters -> modelo único
-    out.append(f'<rect x="250" y="95" width="110" height="60" fill="{CREAM}"/>')
-    d, w = archivo_bold.text("ADAPTER", 20)
-    d, _ = archivo_bold.text("ADAPTER", 20, 250 + (110 - w) / 2, 118)
-    out.append(p(d, INK))
-    d, w = mono.text("por origem", 11)
-    d, _ = mono.text("por origem", 11, 250 + (110 - w) / 2, 140)
-    out.append(p(d, INK, 'fill-opacity="0.8"'))
-    out.append(f'<line x1="360" y1="125" x2="430" y2="125" stroke="{SIGNAL}" stroke-width="2"/>')
-    out.append(f'<polygon points="430,119 442,125 430,131" fill="{SIGNAL}"/>')
-
-    out.append(f'<rect x="442" y="85" width="128" height="80" fill="{SIGNAL}"/>')
-    d, w = archivo_bold.text("PostgreSQL", 20)
-    d, _ = archivo_bold.text("PostgreSQL", 20, 442 + (128 - w) / 2, 118)
-    out.append(p(d, INK))
-    d, w = mono.text("formato único", 11)
-    d, _ = mono.text("formato único", 11, 442 + (128 - w) / 2, 142)
-    out.append(p(d, INK, 'fill-opacity="0.8"'))
-
-    # pacotes correndo: origem -> adapter
-    for i, y in enumerate(ys):
-        out.append(f'<rect x="-4" y="-4" width="8" height="8" fill="{SIGNAL}" opacity="0">'
-                   f'<animateMotion dur="2.4s" begin="{i * 0.8}s" repeatCount="indefinite" path="M150,{y} L250,125 L442,125"/>'
-                   f'<animate attributeName="opacity" dur="2.4s" begin="{i * 0.8}s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;0.05;0.92;1"/>'
-                   f"</rect>")
-    out.append("</svg>")
-    return "\n".join(out)
-
-
 # ───────────────────────────── Botões ─────────────────────────────
 
 def button(archivo_bold: Face, label: str, fill: str, fg: str) -> str:
@@ -267,8 +187,6 @@ def main():
 
     files = {
         "banner.svg": banner(condensed, mono),
-        "stack.svg": stack(mono),
-        "integration-hub.svg": hub(mono, bold),
         "btn-site.svg": button(bold, "Site", SIGNAL, INK),
         "btn-linkedin.svg": button(bold, "LinkedIn", CREAM, INK),
     }
