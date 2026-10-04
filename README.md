@@ -1,39 +1,17 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=150&section=header&color=0:03045e,100:00b4d8" />
-<h1> Olá, eu sou o Rian!</h1>
+# Rian Nascimento Alves
 
-<p align="left">
-  Estudante de <strong>Sistemas de Informação</strong> pelo Cotemig (6º período).<br>
-  Apaixonado por tecnologia e desenvolvimento, focada em aprimorar minhas habilidades e construir projetos significativos.<br>
-  Linguagens que estudo e uso: <strong>Python</strong> e <strong>C#</strong>.
-</p>
+Desenvolvedor de software na Skeps. Backend, integrações e IA: APIs em C# e TypeScript, chatbots na plataforma Blip e agentes de IA. Fora do trabalho, aprofundo Python (FastAPI e Flask) em projetos próprios.
 
----
+## Projetos pessoais
 
-## 💻 Tecnologias e ferramentas
+HelpDeskFlow é um sistema de chamados de suporte para várias empresas, dividido em quatro serviços .NET que conversam por eventos no RabbitMQ. Tem front-end em React, notificações em tempo real e roda em Kubernetes. Mais de 300 testes (unitários, de integração e de navegador) rodam no CI a cada push. Detalhes no [site](https://rian-nascimento.vercel.app/#projetos).
 
-### 📌 Linguagens
-[![My Skills](https://skillicons.dev/icons?i=cs,python)](https://skillicons.dev)
+[Integration Hub API](https://github.com/Rianzzz/integration-hub-api) recebe dados de clientes de sistemas diferentes, converte para um formato só e guarda no PostgreSQL. Foi feita com uma funcionalidade por commit.
 
-### 🚀 Frameworks e bibliotecas
-[![My Skills](https://skillicons.dev/icons?i=flask,fastapi,dotnet)](https://skillicons.dev)
+## Stack
 
-### 🛠️ Ferramentas
-[![My Skills](https://skillicons.dev/icons?i=git,github,vscode,postman)](https://skillicons.dev)
+C#, .NET, TypeScript, Python, FastAPI, PostgreSQL, RabbitMQ, Docker, Kubernetes
 
----
+## Contato
 
-## 🤝 Vamos nos conectar?
-
-[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/riannascimento)
-
-## ⭐ GitHub Stats
-
-<div align="center">
-  
-  [![Rian Nascimento's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Rianzzz&bg_color=0d1117&color=00b4d8&line=00b4d8&point=00b4d8&area=true&area_color=0:03045e,100:00b4d8&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-  
-
-
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=150&section=header&color=0:03045e,100:00b4d8" />
+[Site](https://rian-nascimento.vercel.app) · [LinkedIn](https://www.linkedin.com/in/riannascimento/)
